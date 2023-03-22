@@ -23,7 +23,7 @@ nav {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+ #link{
     
     /* outline: 2px solid yellow; */
     display: flex;
@@ -105,15 +105,20 @@ nav .nav-sect{
     margin-top: 30px;
 }
 .bag-sd1{
+    background-image: url("../Group 58.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     outline: 2px solid yellow;
     width: 40%;
+    height: 100%;
     margin: auto;
     margin-top: 10px;
 }
-.bag-sd1 img{
+/* .bag-sd1 img{
     width: 80%;
     margin-left: 50px;
-}
+} */
 .email-sd #your-email{
     /* outline: 2px solid blue; */
     width: 70%;
@@ -178,19 +183,42 @@ i:last-child {
         height: 120vh;
         margin: auto;
     }
-
+    .harmburger-view{
+        outline: 2px solid yellow;
+    }
     #link{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        height: 100px;
+        border-radius: 20px;
+        background-color: white;
+        justify-content: space-between;
     }
-
+    #menu{
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        color:#02060d;;
+    }
+    
+    #close{
+        display: none;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+    }
 
     .coming-sect{
         width: 80%;
-        height: 60vh;
+        height: 100vh;
         margin: auto;
         /* outline: 2px solid red; */
         flex-direction: column-reverse;
-        margin-top: 200px;
+        /* margin-top: 200px; */
     }
     .coming-sect .text-side{
         outline: 2px solid yellow;
@@ -243,15 +271,13 @@ i:last-child {
     }
 
     .bag-sd1{
-        outline: 2px solid yellow;
-        width: 100%;
-        /* margin-top: -30px; */
+     width: 100%;
     }
 
-    .bag-sd1 img{
+    /* .bag-sd1 img{
         width: 85%;
         margin-left: 30px;
-    }
+    } */
 
     .socials{
         width: 80%;
@@ -261,26 +287,7 @@ i:last-child {
         text-align: center;
         margin-right: 20px;
     }
-    .harmburger-view{
-        outline: 2px solid yellow;
-        /* width: 20%; */
-        margin: auto;
-        position: relative;
-        left: 20px;
-    }
-    #menu{
-        display: block;
-        font-size: 30px;
-    
-    }
-    
-    #close{
-        /* width: 40px; */
-         /* margin: auto;  */
-        /* position: relative; */
-        /* right: 50px;  */
-        display: none;
-    }
+  
 
 
 

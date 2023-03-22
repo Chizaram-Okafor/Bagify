@@ -1,15 +1,15 @@
-var menu = document.getElementById('menu');
-var link = document.getElementById('link');
-var close = document.getElementById('close');
+let menu = document.getElementById('menu');
+let link = document.getElementById('link');
+let close = document.getElementById('close');
 
-const open = ()=>{
-    link.style.display = 'block';
+menu.addEventListener("click",()=>{
+    link.style.display = 'flex';
     menu.style.display = 'none';
-    close.style.display = 'block'
-}
+    close.style.display = 'flex'
+})
 
-// close.addEventListener(click,()=>{
-//     link.style.display = 'none';
-//     menu.style.display = 'block';
-//     close.style.display = 'none';
-// })
+close.addEventListener("click",()=>{
+    link.style.display = 'none';
+    menu.style.display = 'flex';
+    close.style.display = 'none';
+})
